@@ -9,4 +9,5 @@
   --color-primary: oklch(82.8% 0.189 84.429);
   --color-secondary: oklch(44.6% 0.043 257.281);
   --color-dark: oklch(20.8% 0.042 265.755);
+  --color-light: oklch(92.9% 0.013 255.508);
 }

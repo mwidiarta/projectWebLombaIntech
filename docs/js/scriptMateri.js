@@ -48,8 +48,10 @@ const lightBtn = document.getElementById("lightBtn");
 const darkBtn = document.getElementById("darkBtn");
 
 lightBtn.addEventListener("click", () => {
-  document.documentElement.classList.remove("dark"); // aktifkan mode terang
+  document.documentElement.classList.remove("dark");
+  isiSetting.classList.toggle("hidden");
 });
 darkBtn.addEventListener("click", () => {
-  document.documentElement.classList.add("dark"); // aktifkan mode gelap
+  document.documentElement.classList.add("dark");
+  isiSetting.classList.toggle("hidden");
 });

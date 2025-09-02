@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,13 +14,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
   </head>
-  <body class="font-opensans dark:bg-dark">
-    <header class="font-quicksand fixed top-0 left-0 w-full bg-white shadow-sm">
-      <div class="w-full flex justify-between py-4 px-8">
-        <a href="index.html" class="font-bold text-dark">
+  <body class="font-opensans dark:bg-slate-950">
+    <header
+      class="font-quicksand fixed top-0 left-0 w-full bg-white shadow-sm dark:bg-slate-950 dark:shadow-xs dark:shadow-secondary"
+    >
+      <div class="w-full flex justify-between py-4 px-8 dark:text-white">
+        <a href="index.html" class="font-bold text-dark dark:text-white">
           <i class="fa-solid fa-arrow-left-long mr-2"></i>
           <!-- exit -->
-          <span class="hidden sm:inline">Materi Mengatur Anggaran Pribadi</span>
+          <span class="hidden sm:inline dark:text-white"
+            >Materi Mengatur Anggaran Pribadi</span
+          >
         </a>
 
         <div class="flex flex-row gap-10">
@@ -29,14 +33,16 @@
             <button
               title="daftarModul"
               id="menuBtn"
-              class="lg:px-4.5 lg:py-2.5 lg:rounded-l-full lg:bg-dark cursor-pointer"
+              class="lg:px-4.5 lg:py-2.5 lg:rounded-l-full lg:bg-dark cursor-pointer dark:lg:bg-primary"
             >
-              <i class="fa-solid fa-bars text-dark lg:text-white"></i>
+              <i
+                class="fa-solid fa-bars text-dark lg:text-white dark:text-white"
+              ></i>
             </button>
             <!-- menuBtn -->
             <nav
               id="isiMenu"
-              class="fixed top-16 right-0 bg-white shadow-lg w-full px-8 py-6 lg:w-sm lg:border lg:border-slate-200 lg:h-full hidden"
+              class="fixed top-16 right-0 bg-white shadow-md w-full px-8 py-6 lg:w-sm lg:border lg:border-r-0 lg:border-light lg:h-full hidden dark:bg-dark dark:lg:border-secondary dark:shadow-light"
             >
               <button
                 class="hidden lg:block mb-2 cursor-pointer"
@@ -45,33 +51,41 @@
                 <i class="fa-solid fa-circle-chevron-right text-2xl"></i>
               </button>
               <!-- exitNav -->
-              <h4 class="text-lg text-dark font-semibold lg:text-xl">
+              <h4
+                class="text-lg text-dark font-semibold lg:text-xl dark:text-white"
+              >
                 Daftar Isi
               </h4>
-              <hr class="text-slate-200 my-4" />
+              <hr class="text-light my-4 dark:text-secondary" />
               <div>
                 <ul
-                  class="font-opensans list-disc l text-slate-500 text-sm md:text-base flex flex-col gap-2 ml-4"
+                  class="font-opensans list-disc l text-slate-500 text-sm md:text-base flex flex-col gap-2 ml-4 dark:text-light"
                 >
-                  <li class="hover:text-dark">
-                    <a href="">Apa sih Artinya Mengatur Anggaran Pribadi?</a>
+                  <li class="hover:text-dark dark:hover:text-slate-400">
+                    <a href="#subbab1"
+                      >Apa sih Artinya Mengatur Anggaran Pribadi?</a
+                    >
                   </li>
-                  <li class="hover:text-dark">
-                    <a href="">Mengapa Mengatur Anggaran Penting?</a>
+                  <li class="hover:text-dark dark:hover:text-slate-400">
+                    <a href="#subbab2">Mengapa Mengatur Anggaran Penting?</a>
                   </li>
-                  <li class="hover:text-dark">
-                    <a href="">Prinsip Dasar Mengatur Anggaran</a>
+                  <li class="hover:text-dark dark:hover:text-slate-400">
+                    <a href="#subbab3">Prinsip Dasar Mengatur Anggaran</a>
                   </li>
-                  <li class="hover:text-dark">
-                    <a href="">Langkah-Langkah Mengatur Anggaran Pribadi</a>
+                  <li class="hover:text-dark dark:hover:text-slate-400">
+                    <a href="#subbab4"
+                      >Langkah-Langkah Mengatur Anggaran Pribadi</a
+                    >
                   </li>
-                  <li class="hover:text-dark">
-                    <a href="">Tips Praktis untuk Konsistensi</a>
+                  <li class="hover:text-dark dark:hover:text-slate-400">
+                    <a href="#subbab5">Tips Praktis untuk Konsistensi</a>
                   </li>
-                  <li class="hover:text-dark">
-                    <a href="">Contoh Studi Kasus Singkat</a>
+                  <li class="hover:text-dark dark:hover:text-slate-400">
+                    <a href="#subbab6">Contoh Studi Kasus Singkat</a>
                   </li>
-                  <li class="hover:text-dark"><a href="">Kuis</a></li>
+                  <li class="hover:text-dark dark:hover:text-slate-400">
+                    <a href="#quiz">Kuis</a>
+                  </li>
                 </ul>
               </div>
             </nav>
@@ -81,18 +95,18 @@
             <button class="titik3Btn cursor-pointer lg:hidden">
               <i
                 title="Tools"
-                class="fa-solid fa-ellipsis-vertical text-dark px-1"
+                class="fa-solid fa-ellipsis-vertical text-dark px-1 dark:text-white"
               ></i>
             </button>
             <!-- titik3 -->
             <div
               id="isiTitik3"
-              class="fixed top-16 right-7 z-50 bg-white border border-slate-200 rounded-lg lg:border-none lg:block lg:static hidden"
+              class="fixed top-16 right-7 z-50 bg-white border border-light rounded-lg overflow-hidden lg:border-none lg:block lg:static hidden dark:bg-dark dark:border-secondary"
             >
               <!-- menu titik3/sidebar -->
 
               <div
-                class="flex items-center justify-between text-secondary p-4 border-b border-slate-300 lg:hidden"
+                class="flex items-center justify-between text-secondary p-4 border-b border-slate-300 lg:hidden dark:text-light dark:border-secondary"
               >
                 <h4 class="font-semibold">Tools</h4>
                 <button class="titik3Btn cursor-pointer">
@@ -103,7 +117,7 @@
               <!-- 1 -->
               <div class="relative">
                 <button
-                  class="settingBtn text-secondary font-medium p-4 cursor-pointer lg:p-0 group hover:bg-slate-200/50 active:bg-slate-200/50 lg:active:bg-transparent lg:hover:bg-transparent"
+                  class="settingBtn text-secondary font-medium p-4 cursor-pointer lg:p-0 group hover:bg-light/50 active:bg-light/50 lg:active:bg-transparent lg:hover:bg-transparent dark:text-light"
                 >
                   <i
                     title="Adaptive Reading"
@@ -114,25 +128,28 @@
                 <!-- settingBtn -->
                 <div
                   id="isiSetting"
-                  class="fixed inset-0 overflow-hidden bg-white shadow-lg p-4 lg:w-md lg:left-full lg:-translate-x-full lg:top-16 lg:rounded-xl hidden"
+                  class="fixed inset-0 overflow-hidden bg-white shadow-lg p-4 lg:w-md lg:left-full lg:-translate-x-full lg:top-16 lg:rounded-xl hidden dark:bg-dark"
                 >
-                  <div class="flex justify-between items-center text-secondary">
+                  <div
+                    class="flex justify-between items-center text-secondary dark:text-white"
+                  >
                     <h4 class="font-bold">Adaptive Reading</h4>
                     <button class="settingBtn cursor-pointer">
                       <i class="fa-solid fa-xmark"></i>
                     </button>
                     <!-- exitsetting -->
                   </div>
-                  <hr class="my-4 text-slate-200" />
+                  <hr class="my-4 text-light dark:text-secondary" />
                   <div>
-                    <span class="mb-4 text-secondary font-semibold block"
+                    <span
+                      class="mb-4 text-secondary font-semibold block dark:text-light"
                       >Tema</span
                     >
                     <div class="flex gap-5">
                       <div class="w-full relative">
                         <button
                           id="lightBtn"
-                          class="relative w-full p-4 bg-white border border-slate-200 text-sm text-secondary cursor-pointer hover:border-amber-300 active:border-amber-300"
+                          class="relative w-full p-4 bg-white border border-light text-sm text-secondary cursor-pointer hover:border-amber-300 active:border-amber-300"
                         >
                           Belajar dengan CoinLita
                         </button>
@@ -145,7 +162,7 @@
                       <div class="relative w-full">
                         <button
                           id="darkBtn"
-                          class="relative w-full p-4 bg-dark border border-slate-200 text-sm text-white cursor-pointer hover:border-amber-300 active:border-amber-300"
+                          class="relative w-full p-4 bg-dark border border-light text-sm text-white cursor-pointer hover:border-amber-300 active:border-amber-300"
                         >
                           Belajar dengan CoinLita
                         </button>
@@ -161,14 +178,14 @@
               </div>
               <!-- Sidebarsisa -->
               <div
-                class="lg:fixed left-0 top-48 lg:flex lg:flex-col-reverse lg:p-4 lg:border lg:border-l-0 lg:border-slate-300 rounded-r-lg"
+                class="lg:fixed left-0 top-48 lg:flex lg:flex-col-reverse lg:p-4 lg:border lg:border-l-0 lg:border-slate-300 rounded-r-lg dark:lg:border-secondary dark:bg-dark"
               >
                 <!-- 2 -->
                 <div
-                  class="w-full group hover:bg-slate-200/50 active:bg-slate-200/50 lg:active:bg-transparent lg:hover:bg-transparent"
+                  class="w-full group hover:bg-light/50 active:bg-light/50 lg:active:bg-transparent lg:hover:bg-transparent"
                 >
                   <button
-                    class="diskusiBtn text-secondary font-medium p-4 cursor-pointer lg:p-0 group"
+                    class="diskusiBtn text-secondary font-medium p-4 cursor-pointer lg:p-0 group dark:text-light"
                   >
                     <i
                       title="formDiskusi"
@@ -180,24 +197,28 @@
                 </div>
                 <!-- 3 -->
                 <div class="hidden lg:flex flex-col-reverse gap-4 mb-4">
-                  <a href="#" class="">
+                  <a href="https://twitter.com" target="_blank">
                     <i
-                      class="fa-brands fa-x-twitter text-secondary text-xl"
+                      class="fa-brands fa-x-twitter text-secondary text-xl dark:text-light"
                     ></i>
                   </a>
                   <!-- 4 -->
-                  <a href="#">
-                    <i class="fa-brands fa-facebook text-secondary text-xl"></i>
+                  <a href="https://www.facebook.com" target="_blank">
+                    <i
+                      class="fa-brands fa-facebook text-secondary text-xl dark:text-light"
+                    ></i>
                   </a>
                   <!-- 5 -->
-                  <a href="#">
+                  <a href="https://www.instagram.com" target="_blank">
                     <i
-                      class="fa-brands fa-instagram text-secondary text-xl"
+                      class="fa-brands fa-instagram text-secondary text-xl dark:text-light"
                     ></i>
                   </a>
                   <!-- 6 -->
                   <a href="#">
-                    <i class="fa-solid fa-circle-up text-secondary text-xl"></i>
+                    <i
+                      class="fa-solid fa-circle-up text-secondary text-xl dark:text-light"
+                    ></i>
                   </a>
                 </div>
               </div>
@@ -214,31 +235,35 @@
       ></div>
 
       <div
-        class="fixed bottom-0 left-0 w-full bg-white border border-slate-300 rounded-t-2xl sm:w-xl sm:left-1/2 sm:-translate-x-1/2 z-[52]"
+        class="fixed bottom-0 left-0 w-full bg-white border border-slate-300 rounded-t-2xl sm:w-xl sm:left-1/2 sm:-translate-x-1/2 z-[52] dark:bg-dark dark:border-secondary"
       >
         <div class="diskusiBtn absolute top-4 right-4">
-          <i class="fa-solid fa-xmark text-xl text-dark cursor-pointer"></i>
+          <i
+            class="fa-solid fa-xmark text-xl text-dark cursor-pointer dark:text-white"
+          ></i>
         </div>
         <!-- btnCloseDiskusi -->
         <div class="flex flex-col px-6 py-14 overflow-y-auto h-full">
           <i
-            class="fa-solid fa-comments text-dark text-5xl self-center mb-10"
+            class="fa-solid fa-comments text-dark text-5xl self-center mb-10 dark:text-white"
           ></i>
-          <h4 class="text-dark text-lg font-semibold mb-4">
+          <h4 class="text-dark text-lg font-semibold mb-4 dark:text-white">
             Bagaimana pendapatmu dari materi ini?
           </h4>
-          <span class="text-sm text-dark font-medium mb-2">0 Komentar</span>
+          <span class="text-sm text-dark font-medium mb-2 dark:text-light"
+            >0 Komentar</span
+          >
           <hr class="my-6 text-secondary" />
           <form class="flex flex-col gap-3">
             <textarea
               rows="4"
               cols="30"
               placeholder="Ikut berdiskusi..."
-              class="w-full text-sm text-secondary font-medium px-6 py-4 resize-none border-2 border-secondary rounded-lg focus:outline-none md:text-base"
+              class="w-full text-sm text-secondary font-medium px-6 py-4 resize-none border-2 border-secondary rounded-lg focus:outline-none md:text-base dark:text-light"
             ></textarea>
             <button
               type="submit"
-              class="text-white font-semibold cursor-pointer px-6 py-2 bg-dark rounded-xl self-end"
+              class="text-white font-semibold cursor-pointer px-6 py-2 bg-dark rounded-xl self-end dark:bg-slate-800 dark:text-light"
             >
               Komentar
             </button>
@@ -250,14 +275,14 @@
     <!-- Content -->
     <div class="mt-20 w-full mx-auto lg:w-4xl px-10">
       <!-- Hero -->
-      <section class="mb-20">
+      <section class="mb-4">
         <div>
           <h1
-            class="font-quicksand mb-3 text-3xl text-dark font-bold md:text-4xl"
+            class="font-quicksand mb-3 text-3xl text-dark font-bold md:text-4xl dark:text-white"
           >
             Langkah Awal Menuju Keuangan Yang Sehat
           </h1>
-          <p class="text-sm text-slate-500 md:text-base">
+          <p class="text-sm text-slate-500 md:text-base dark:text-light">
             Apa pentingnya mengatur anggaran pribadi, dan bagimana trik anda
             tips mengaturnya dengan baik? Pelajari Selengkapnya pada materi kali
             ini
@@ -271,22 +296,23 @@
           />
         </div>
       </section>
-      <!-- Subbab1 -->
-      <section id="subbab1" class="mb-20">
-        <div class="mb-10">
-          <h2 class="font-quicksand font-bold mb-3 text-dark text-2xl">
+      <section id="subbab1" class="pt-16">
+        <div>
+          <h2
+            class="font-quicksand font-bold mb-3 text-dark text-2xl dark:text-white"
+          >
             Apa sih Artinya Mengatur Anggaran Pribadi?
           </h2>
-          <p class="mb-2 text-slate-500 text-sm md:text-base">
+          <p class="mb-2 text-slate-500 text-sm md:text-base dark:text-light">
             Mengatur anggaran pribadi adalah langkah awal yang sangat penting
             dalam membangun kesehatan finansial. Bayangkan keuangan seperti
             sebuah kapal — tanpa rencana perjalanan (anggaran), kapal bisa
             berlayar tanpa arah dan berisiko terombang-ambing di tengah laut.
           </p>
-          <p class="text-slate-500 text-sm md:text-base">
+          <p class="text-slate-500 text-sm md:text-base dark:text-light">
             Dengan anggaran, kita memiliki peta dan kompas untuk memastikan
             pendapatan digunakan sesuai tujuan. Namun, menurut
-            <span class="font-semibold text-secondary"
+            <span class="font-semibold text-secondary dark:text-white"
               >data OJK tahun 2022, hanya 35%</span
             >
             masyarakat Indonesia yang memiliki rencana anggaran tertulis.
@@ -295,163 +321,181 @@
           </p>
         </div>
       </section>
-      <section id="subbab2" class="mb-20">
+      <section id="subbab2" class="pt-16">
         <div>
-          <div>
-            <div class="mb-5">
-              <h2 class="font-quicksand font-bold mb-3 text-dark text-2xl">
-                Mengapa Mengatur Anggaran Penting?
-              </h2>
-              <p class="text-slate-500 text-sm md:text-base">
-                Mengatur anggaran bukan hanya soal angka, tapi tentang bagaimana
-                kita mengarahkan hidup sesuai prioritas. Ada empat manfaat besar
-                yang langsung terasa, yaitu:
+          <div class="mb-5">
+            <h2
+              class="font-quicksand font-bold mb-3 text-dark text-2xl dark:text-white"
+            >
+              Mengapa Mengatur Anggaran Penting?
+            </h2>
+            <p class="text-slate-500 text-sm md:text-base dark:text-light">
+              Mengatur anggaran bukan hanya soal angka, tapi tentang bagaimana
+              kita mengarahkan hidup sesuai prioritas. Ada empat manfaat besar
+              yang langsung terasa, yaitu:
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-4">
+            <!-- card1 -->
+            <div
+              class="w-full p-4 shadow-sm rounded-md group md:w-sm dark:shadow-light"
+            >
+              <i
+                class="fa-solid fa-wallet text-dark lg:text-lg group-hover:text-emerald-500 dark:text-light"
+              ></i>
+              <h4
+                class="mb-1.5 text-dark font-semibold lg:text-lg group-hover:text-emerald-500 dark:text-white"
+              >
+                Mengontrol Pengeluaran
+              </h4>
+              <p class="text-slate-500 text-sm md:text-base dark:text-light">
+                Anggaran membantu kita membatasi pengeluaran sesuai prioritas
+                dan menghindari keborosan.
               </p>
             </div>
-            <div class="flex flex-wrap gap-4">
-              <!-- card1 -->
-              <div class="w-full p-4 shadow-sm rounded-s-md group md:w-sm">
-                <i
-                  class="fa-solid fa-wallet text-dark lg:text-lg group-hover:text-emerald-500"
-                ></i>
-                <h4
-                  class="text-dark font-semibold lg:text-lg group-hover:text-emerald-500"
-                >
-                  Mengontrol Pengeluaran
-                </h4>
-                <p class="text-slate-500 text-sm md:text-base">
-                  Anggaran membantu kita membatasi pengeluaran sesuai prioritas
-                  dan menghindari keborosan.
-                </p>
-              </div>
-              <!-- card2 -->
-              <div class="w-full p-4 shadow-sm rounded-s-md group md:w-sm">
-                <i
-                  class="fa-solid fa-ban text-dark lg:text-lg group-hover:text-emerald-500"
-                ></i>
-                <h4
-                  class="text-dark font-semibold lg:text-lg group-hover:text-emerald-500"
-                >
-                  Menghindari Utang Konsumtif
-                </h4>
-                <p class="text-slate-500 text-sm md:text-base">
-                  Anggaran membantu kita mengendalikan belanja dan menghindari
-                  penggunaan utang untuk kebutuhan yang
-                </p>
-              </div>
-              <!-- card3 -->
-              <div class="w-full p-4 shadow-sm rounded-s-md group md:w-sm">
-                <i
-                  class="fa-solid fa-bullseye text-dark lg:text-lg group-hover:text-emerald-500"
-                ></i>
-                <h4
-                  class="text-dark font-semibold lg:text-lg group-hover:text-emerald-500"
-                >
-                  Mencapai Tujuan Finansial
-                </h4>
-                <p class="text-slate-500 text-sm md:text-base">
-                  Anggaran membuat tabungan dan investasi lebih terarah sehingga
-                  tujuan keuangan lebih cepat tercapai.
-                </p>
-              </div>
-              <!-- card4 -->
-              <div class="w-full p-4 shadow-sm rounded-s-md group md:w-sm">
-                <i
-                  class="fa-solid fa-face-grin-beam text-dark lg:text-lg group-hover:text-emerald-500"
-                ></i>
-                <h4
-                  class="text-dark font-semibold lg:text-lg group-hover:text-emerald-500"
-                >
-                  Mengurangi Stres Keuangan
-                </h4>
-                <p class="text-slate-500 text-sm md:text-base">
-                  Anggaran memberi gambaran jelas kondisi keuangan sehingga kita
-                  lebih tenang menghadapi kebutuhan mendadak.
-                </p>
-              </div>
+            <!-- card2 -->
+            <div
+              class="w-full p-4 shadow-sm rounded-md group md:w-sm dark:shadow-light"
+            >
+              <i
+                class="fa-solid fa-ban text-dark lg:text-lg group-hover:text-emerald-500 dark:text-light"
+              ></i>
+              <h4
+                class="mb-1.5 text-dark font-semibold lg:text-lg group-hover:text-emerald-500 dark:text-white"
+              >
+                Menghindari Utang Konsumtif
+              </h4>
+              <p class="text-slate-500 text-sm md:text-base dark:text-light">
+                Anggaran membantu kita mengendalikan belanja dan menghindari
+                penggunaan utang untuk kebutuhan yang
+              </p>
+            </div>
+            <!-- card3 -->
+            <div
+              class="w-full p-4 shadow-sm rounded-md group md:w-sm dark:shadow-light"
+            >
+              <i
+                class="fa-solid fa-bullseye text-dark lg:text-lg group-hover:text-emerald-500 dark:text-light"
+              ></i>
+              <h4
+                class="mb-1.5 text-dark font-semibold lg:text-lg group-hover:text-emerald-500 dark:text-white"
+              >
+                Mencapai Tujuan Finansial
+              </h4>
+              <p class="text-slate-500 text-sm md:text-base dark:text-light">
+                Anggaran membuat tabungan dan investasi lebih terarah sehingga
+                tujuan keuangan lebih cepat tercapai.
+              </p>
+            </div>
+            <!-- card4 -->
+            <div
+              class="w-full p-4 shadow-sm rounded-md group md:w-sm dark:shadow-light"
+            >
+              <i
+                class="fa-solid fa-face-grin-beam text-dark lg:text-lg group-hover:text-emerald-500 dark:text-light"
+              ></i>
+              <h4
+                class="mb-1.5 text-dark font-semibold lg:text-lg group-hover:text-emerald-500 dark:text-white"
+              >
+                Mengurangi Stres Keuangan
+              </h4>
+              <p class="text-slate-500 text-sm md:text-base dark:text-light">
+                Anggaran memberi gambaran jelas kondisi keuangan sehingga kita
+                lebih tenang menghadapi kebutuhan mendadak.
+              </p>
             </div>
           </div>
         </div>
       </section>
-      <section id="subbab3" class="mb-20">
+      <section id="subbab3" class="pt-16">
         <div>
-          <h2 class="font-quicksand font-bold mb-3 text-dark text-2xl">
+          <h2
+            class="font-quicksand font-bold mb-3 text-dark text-2xl dark:text-white"
+          >
             Prinsip Dasar Mengatur Anggaran
           </h2>
-          <p class="mb-2 text-slate-500 text-sm md:text-base">
+          <p class="mb-2 text-slate-500 text-sm md:text-base dark:text-light">
             Sebelum masuk ke teknis, ada empat prinsip sederhana yang bisa
             dijadikan pegangan. Anggap ini seperti “aturan main” pribadi, yaitu:
           </p>
-          <ul class="ml-5 text-slate-500 text-sm list-decimal md:text-base">
-            <li class="mb-1 font-semibold text-secondary">
+          <ul class="ml-5 text-sm list-decimal md:text-base">
+            <li class="mb-1 font-semibold text-secondary dark:text-white">
               Disiplin
-              <span class="text-slate-500 font-normal"
+              <span class="text-slate-500 font-normal dark:text-light"
                 >: Anggaran hanya berguna jika dijalankan secara
                 konsisten.</span
               >
             </li>
-            <li class="mb-1 font-semibold text-secondary">
+            <li class="mb-1 font-semibold text-secondary dark:text-white">
               Realistis
-              <span class="text-slate-500 font-normal"
+              <span class="text-slate-500 font-normal dark:text-light"
                 >: Jangan terlalu ketat hingga membuat hidup terasa
                 tertekan.</span
               >
             </li>
-            <li class="mb-1 font-semibold text-secondary">
+            <li class="mb-1 font-semibold text-secondary dark:text-white">
               Fleksibel
-              <span class="text-slate-500 font-normal"
+              <span class="text-slate-500 font-normal dark:text-light"
                 >: Sesuaikan jika ada perubahan pendapatan atau kondisi
                 darurat.</span
               >
             </li>
-            <li class="font-semibold text-secondary">
+            <li class="font-semibold text-secondary dark:text-white">
               Terukur
-              <span class="text-slate-500 font-normal"
+              <span class="text-slate-500 font-normal dark:text-light"
                 >: Semua pemasukan dan pengeluaran harus dicatat.</span
               >
             </li>
           </ul>
         </div>
       </section>
-      <section id="subbab4" class="mb-20">
+      <section id="subbab4" class="pt-16">
         <div>
           <div class="mb-6">
-            <h2 class="font-quicksand font-bold mb-3 text-dark text-2xl">
+            <h2
+              class="font-quicksand font-bold mb-3 text-dark text-2xl dark:text-white"
+            >
               Langkah-langkah Mengatur Anggaran Pribadi
             </h2>
-            <p class="text-slate-500 text-sm md:text-base">
+            <p class="text-slate-500 text-sm md:text-base dark:text-light">
               Cara mengatur anggaran bisa dibagi ke beberapa tahap. Alih-alih
               sekadar teori, coba praktikkan langsung:
             </p>
           </div>
           <!-- bagian1 -->
           <div class="mb-6">
-            <h3 class="mb-2.5 text-secondary font-medium">
+            <h3 class="mb-2.5 text-secondary font-semibold dark:text-white">
               a. Hitung Semua Sumber Pemasukan
             </h3>
-            <p class="mb-1.5 text-slate-500 text-sm md:text-base">
+            <p
+              class="mb-1.5 text-slate-500 text-sm md:text-base dark:text-light"
+            >
               Langkah pertama adalah mengetahui seberapa besar “bahan bakar”
               finansial yang kita miliki.
             </p>
-            <p class="mb-1.5 text-slate-500 text-sm md:text-base">
+            <p
+              class="mb-1.5 text-slate-500 text-sm md:text-base dark:text-light"
+            >
               Catat semua pemasukan, mulai dari
-              <span class="text-secondary font-medium"
+              <span class="text-secondary font-semibold dark:text-white"
                 >gaji utama, usaha sampingan, bonus, hingga pekerjaan
                 freelance</span
               >. Semakin detail data pemasukan, semakin mudah menyusun strategi
               keuangan.
             </p>
-            <p class="text-slate-500 text-sm md:text-base">
+            <p class="text-slate-500 text-sm md:text-base dark:text-light">
               Ingat, banyak orang terjebak karena hanya fokus pada gaji tetap,
               padahal pendapatan tambahan juga perlu dihitung.
             </p>
           </div>
           <!-- bagian2 -->
           <div class="mb-6">
-            <h3 class="mb-2.5 text-secondary font-medium">
+            <h3 class="mb-2.5 text-secondary font-semibold dark:text-white">
               b. Catat dan Kategorikan Pengeluaran
             </h3>
-            <p class="mb-1.5 text-slate-500 text-sm md:text-base">
+            <p
+              class="mb-1.5 text-slate-500 text-sm md:text-base dark:text-light"
+            >
               Setelah tahu berapa yang masuk, waktunya melihat ke mana uang
               pergi. Pisahkan pengeluaran menjadi dua kelompok besar:
             </p>
@@ -461,8 +505,12 @@
                   <i
                     class="fa-solid fa-caret-right text-lg mt-0.5 md:text-xl text-primary"
                   ></i>
-                  <div class="text-slate-500 text-sm md:text-base">
-                    <h4 class="font-medium text-emerald-500">
+                  <div
+                    class="text-slate-500 text-sm md:text-base dark:text-light"
+                  >
+                    <h4
+                      class="font-medium text-emerald-500 dark:text-emerald-400"
+                    >
                       Kebutuhan (needs)
                     </h4>
                     <p>
@@ -475,8 +523,12 @@
                   <i
                     class="fa-solid fa-caret-right text-lg mt-0.5 md:text-xl text-primary"
                   ></i>
-                  <div class="text-slate-500 text-sm md:text-base">
-                    <h4 class="font-medium text-emerald-500">
+                  <div
+                    class="text-slate-500 text-sm md:text-base dark:text-light"
+                  >
+                    <h4
+                      class="font-medium text-emerald-500 dark:text-emerald-400"
+                    >
                       Keinginan (wants)
                     </h4>
                     <p>
@@ -487,7 +539,7 @@
                   </div>
                 </li>
               </ul>
-              <p class="text-slate-500 text-sm md:text-base">
+              <p class="text-slate-500 text-sm md:text-base dark:text-light">
                 Mengetahui perbedaan keduanya membantu kita sadar prioritas.
                 Banyak orang gagal mengatur keuangan bukan karena pendapatan
                 kurang, tetapi karena salah menempatkan kebutuhan dan keinginan.
@@ -497,12 +549,15 @@
           <!-- bagian3 -->
           <div class="mb-6">
             <div>
-              <h3 class="mb-2.5 text-secondary font-medium">
+              <h3 class="mb-2.5 text-secondary font-semibold dark:text-white">
                 c. Terapkan Metode Pengelolaan
               </h3>
-              <p class="mb-1.5 text-slate-500 text-sm md:text-base">
+              <p
+                class="mb-1.5 text-slate-500 text-sm md:text-base dark:text-light"
+              >
                 Inilah bagian inti: memilih sistem yang sesuai dengan gaya
-                hidup. Ada beberapa metode populer yang bisa
+                hidup. Ada beberapa metode populer yang bisa digunakan,
+                diantaranya:
               </p>
             </div>
             <div>
@@ -511,21 +566,34 @@
                   <i
                     class="fa-solid fa-caret-right text-lg mt-0.5 md:text-xl text-primary"
                   ></i>
-                  <div class="text-slate-500 text-sm md:text-base">
-                    <h4 class="mb-1.5 font-medium text-emerald-500">
+                  <div
+                    class="text-slate-500 text-sm md:text-base dark:text-light"
+                  >
+                    <h4
+                      class="mb-1.5 font-medium text-emerald-500 dark:text-emerald-400"
+                    >
                       Metode 50/30/20 Rule
                     </h4>
                     <ul class="ml-5 list-disc">
                       <li class="mb-1">
-                        <span class="text-secondary font-semibold">50%</span>
+                        <span
+                          class="text-secondary font-semibold dark:text-white"
+                          >50%</span
+                        >
                         dialokasikan untuk kebutuhan pokok.
                       </li>
                       <li class="mb-1">
-                        <span class="text-secondary font-semibold">30%</span>
+                        <span
+                          class="text-secondary font-semibold dark:text-white"
+                          >30%</span
+                        >
                         boleh digunakan untuk keinginan.
                       </li>
                       <li>
-                        <span class="text-secondary font-semibold">20%</span>
+                        <span
+                          class="text-secondary font-semibold dark:text-white"
+                          >20%</span
+                        >
                         langsung masuk ke tabungan atau investasi. Metode ini
                         cocok untuk pemula karena sederhana dan mudah diikuti.
                       </li>
@@ -536,21 +604,25 @@
                   <i
                     class="fa-solid fa-caret-right text-lg mt-0.5 md:text-xl text-primary"
                   ></i>
-                  <div class="text-slate-500 text-sm md:text-base">
-                    <h4 class="mb-1.5 font-medium text-emerald-500">
+                  <div
+                    class="text-slate-500 text-sm md:text-base dark:text-light"
+                  >
+                    <h4
+                      class="mb-1.5 font-medium text-emerald-500 dark:text-emerald-400"
+                    >
                       Metode Zero-Based Budget
                     </h4>
-                    <p class="mb-1.5 text-slate-500 text-sm md:text-base">
+                    <p class="mb-1.5 text-sm md:text-base">
                       Pada metode ini, setiap rupiah dari pendapatan sudah punya
                       tujuan penggunaan. Tidak ada uang yang dibiarkan
                       menganggur.
                     </p>
-                    <p class="mb-1.5 text-slate-500 text-sm md:text-base">
+                    <p class="mb-1.5 text-sm md:text-base">
                       Contoh: Rp100.000 bisa dialokasikan untuk dana darurat,
                       Rp50.000 untuk hiburan, Rp200.000 untuk transportasi, dan
                       seterusnya.
                     </p>
-                    <p class="text-slate-500 text-sm md:text-base">
+                    <p class="text-sm md:text-base">
                       Metode ini sangat efektif bagi mereka yang ingin disiplin
                       penuh dan mengurangi kebocoran pengeluaran.
                     </p>
@@ -560,11 +632,15 @@
                   <i
                     class="fa-solid fa-caret-right text-lg mt-0.5 md:text-xl text-primary"
                   ></i>
-                  <div class="text-slate-500 text-sm md:text-base">
-                    <h4 class="mb-1.5 font-medium text-emerald-500">
+                  <div
+                    class="text-slate-500 text-sm md:text-base dark:text-light"
+                  >
+                    <h4
+                      class="mb-1.5 font-medium text-emerald-500 dark:text-emerald-400"
+                    >
                       Metode Amplop (Envelope System)
                     </h4>
-                    <p class="text-slate-500 text-sm md:text-base">
+                    <p class="text-sm md:text-base">
                       Cocok untuk yang lebih nyaman dengan uang tunai. Setiap
                       kategori pengeluaran dimasukkan ke amplop berbeda. Jika
                       uang dalam satu amplop habis, artinya tidak boleh menambah
@@ -579,29 +655,32 @@
           <!-- bagian4 -->
           <div class="mb-6">
             <div>
-              <h3 class="mb-2.5 text-secondary font-medium">
+              <h3 class="mb-2.5 text-secondary font-semibold dark:text-white">
                 d. Gunakan Alat Bantu
               </h3>
-              <p class="mb-1.5 text-slate-500 text-sm md:text-base">
+              <p
+                class="mb-1.5 text-slate-500 text-sm md:text-base dark:text-light"
+              >
                 Jangan mengandalkan ingatan. Gunakan media untuk mencatat dan
                 melacak, seperti:
               </p>
             </div>
             <ul
-              class="ml-5 mb-1.5 list-disc text-slate-500 text-sm md:text-base"
+              class="ml-5 mb-1.5 list-disc text-slate-500 text-sm md:text-base dark:text-light"
             >
               <li class="mb-1">
-                <span class="text-secondary font-semibold"
+                <span class="text-secondary font-semibold dark:text-white"
                   >Aplikasi keuangan</span
                 >: Money Lover, Spendee, Finansialku, atau bahkan fitur catatan
                 di e-wallet.
               </li>
               <li>
-                <span class="text-secondary font-semibold">Manual</span>:
-                spreadsheet Excel/Google Sheets atau buku catatan sederhana.
+                <span class="text-secondary font-semibold dark:text-white"
+                  >Manual</span
+                >: spreadsheet Excel/Google Sheets atau buku catatan sederhana.
               </li>
             </ul>
-            <p class="text-slate-500 text-sm md:text-base">
+            <p class="text-slate-500 text-sm md:text-base dark:text-light">
               Kuncinya bukan pada apa yang dipakai, tapi apakah kita konsisten
               menggunakannya.
             </p>
@@ -609,10 +688,12 @@
           <!-- bagian5 -->
           <div>
             <div>
-              <h3 class="mb-2.5 text-secondary font-medium">
+              <h3 class="mb-2.5 text-secondary font-semibold dark:text-white">
                 e. Evaluasi Rutin
               </h3>
-              <p class="mb-2.5 text-slate-500 text-sm md:text-base">
+              <p
+                class="mb-2.5 text-slate-500 text-sm md:text-base dark:text-light"
+              >
                 Anggaran bukan dokumen sekali jadi. Kondisi keuangan bisa
                 berubah—naik gaji, ada kebutuhan baru, atau bahkan kehilangan
                 pekerjaan. Karena itu, lakukan evaluasi tiap akhir bulan.
@@ -625,7 +706,7 @@
                   class="fa-solid fa-caret-right text-lg mt-0.5 md:text-xl text-primary"
                 ></i>
                 <div class="text-sm md:text-base">
-                  <p class="font-semibold text-secondary">
+                  <p class="font-semibold text-secondary dark:text-white">
                     Apakah ada pos yang overbudget?
                   </p>
                 </div>
@@ -635,7 +716,7 @@
                   class="fa-solid fa-caret-right text-lg mt-0.5 md:text-xl text-primary"
                 ></i>
                 <div class="text-sm md:text-base">
-                  <p class="font-semibold text-secondary">
+                  <p class="font-semibold text-secondary dark:text-white">
                     Apakah tabungan/investasi sudah sesuai target?
                   </p>
                 </div>
@@ -645,17 +726,19 @@
                   class="fa-solid fa-caret-right text-lg mt-0.5 md:text-xl text-primary"
                 ></i>
                 <div class="text-sm md:text-base">
-                  <p class="font-semibold text-secondary">
+                  <p class="font-semibold text-secondary dark:text-white">
                     Apakah perlu penyesuaian untuk bulan berikutnya?
                   </p>
                 </div>
               </li>
             </ul>
-            <p class="mb-1.5 text-slate-500 text-sm md:text-base">
+            <p
+              class="mb-1.5 text-slate-500 text-sm md:text-base dark:text-light"
+            >
               Evaluasi inilah yang membuat anggaran hidup dan relevan, bukan
               sekadar catatan angka.
             </p>
-            <p class="text-slate-500 text-sm md:text-base">
+            <p class="text-slate-500 text-sm md:text-base dark:text-light">
               Nah, jadi dengan langkah-langkah ini, anggaran bukan lagi sekadar
               “pembatas kebebasan” tetapi justru menjadi alat yang membuat kita
               lebih tenang dan terarah.
@@ -663,12 +746,14 @@
           </div>
         </div>
       </section>
-      <section id="subbab5" class="mb-20">
+      <section id="subbab5" class="pt-16">
         <div>
-          <h2 class="font-quicksand font-bold mb-3 text-dark text-2xl">
+          <h2
+            class="font-quicksand font-bold mb-3 text-dark text-2xl dark:text-white"
+          >
             Tips Praktis untuk Konsistensi
           </h2>
-          <p class="mb-2 text-slate-500 text-sm md:text-base">
+          <p class="mb-2 text-slate-500 text-sm md:text-base dark:text-light">
             Membuat anggaran itu mudah, tetapi menjaga konsistensi justru yang
             paling menantang. Berikut beberapa strategi sederhana agar rencana
             keuangan tetap berjalan, diantaranya:
@@ -679,10 +764,12 @@
                 class="fa-solid fa-caret-right text-lg mt-0.5 md:text-xl text-primary"
               ></i>
               <div class="text-sm md:text-base">
-                <h4 class="mb-1.5 font-medium text-emerald-500">
+                <h4
+                  class="mb-1.5 font-medium text-emerald-500 dark:text-emerald-400"
+                >
                   Sisihkan tabungan di awal (Pay Yourself First)
                 </h4>
-                <p class="text-slate-500">
+                <p class="text-slate-500 dark:text-light">
                   Begitu gajian, langsung alokasikan sebagian untuk tabungan
                   atau investasi, minimal 10-20%. Jangan menunggu sisa akhir
                   bulan, karena seringkali “sisa” itu tidak pernah ada. Dengan
@@ -695,10 +782,12 @@
                 class="fa-solid fa-caret-right text-lg mt-0.5 md:text-xl text-primary"
               ></i>
               <div class="text-sm md:text-base">
-                <h4 class="mb-1.5 font-medium text-emerald-500">
+                <h4
+                  class="mb-1.5 font-medium text-emerald-500 dark:text-emerald-400"
+                >
                   Batasi penggunaan kartu kredit
                 </h4>
-                <p class="text-slate-500">
+                <p class="text-slate-500 dark:text-light">
                   Kartu kredit bisa jadi penyelamat saat darurat, tetapi
                   berbahaya jika dipakai untuk belanja impulsif. Gunakan hanya
                   untuk hal mendesak, seperti biaya medis atau kebutuhan penting
@@ -712,10 +801,12 @@
                 class="fa-solid fa-caret-right text-lg mt-0.5 md:text-xl text-primary"
               ></i>
               <div class="text-sm md:text-base">
-                <h4 class="mb-1.5 font-medium text-emerald-500">
+                <h4
+                  class="mb-1.5 font-medium text-emerald-500 dark:text-emerald-400"
+                >
                   Gunakan sistem amplop atau dompet digital terpisah
                 </h4>
-                <p class="text-slate-500">
+                <p class="text-slate-500 dark:text-light">
                   Pisahkan anggaran berdasarkan kategori. Misalnya, buat dompet
                   khusus untuk kebutuhan sehari-hari, satu lagi untuk hiburan,
                   dan satu lagi untuk transportasi. Dengan begitu, kamu bisa
@@ -729,10 +820,12 @@
                 class="fa-solid fa-caret-right text-lg mt-0.5 md:text-xl text-primary"
               ></i>
               <div class="text-sm md:text-base">
-                <h4 class="mb-1.5 font-medium text-emerald-500">
+                <h4
+                  class="mb-1.5 font-medium text-emerald-500 dark:text-emerald-400"
+                >
                   Terapkan aturan “Wait List 24 Jam”
                 </h4>
-                <p class="text-slate-500">
+                <p class="text-slate-500 dark:text-light">
                   Jika ingin membeli barang non-esensial (misalnya gadget,
                   fashion, atau tiket konser), tahan dulu keinginan itu selama
                   24 jam. Biasanya, setelah menunggu, rasa ingin membeli
@@ -746,10 +839,12 @@
                 class="fa-solid fa-caret-right text-lg mt-0.5 md:text-xl text-primary"
               ></i>
               <div class="text-sm md:text-base">
-                <h4 class="mb-1.5 font-medium text-emerald-500">
+                <h4
+                  class="mb-1.5 font-medium text-emerald-500 dark:text-emerald-400"
+                >
                   Tentukan reward kecil untuk diri sendiri
                 </h4>
-                <p class="text-slate-500">
+                <p class="text-slate-500 dark:text-light">
                   Konsistensi lebih mudah dijaga kalau tidak terasa kaku.
                   Misalnya, jika berhasil menabung Rp500.000 dalam sebulan,
                   izinkan diri sendiri menikmati hal kecil, seperti makan enak
@@ -763,34 +858,38 @@
                 class="fa-solid fa-caret-right text-lg mt-0.5 md:text-xl text-primary"
               ></i>
               <div class="text-sm md:text-base">
-                <h4 class="mb-1.5 font-medium text-emerald-500">
+                <h4
+                  class="mb-1.5 font-medium text-emerald-500 dark:text-emerald-400"
+                >
                   Buat pengingat otomatis
                 </h4>
-                <p class="text-slate-500">
+                <p class="text-slate-500 dark:text-light">
                   Manfaatkan fitur notifikasi aplikasi keuangan atau reminder di
                   kalender digital. Misalnya, alarm khusus untuk mencatat
                   pengeluaran harian atau mengingatkan jadwal evaluasi bulanan.
                 </p>
               </div>
             </li>
-            <p class="text-slate-500 text-sm md:text-base">
+            <p class="text-slate-500 text-sm md:text-base dark:text-light">
               Intinya: konsistensi tercipta bukan dari aturan rumit, tapi dari
               kebiasaan kecil yang dilakukan berulang-ulang.
             </p>
           </ul>
         </div>
       </section>
-      <section id="subbab6" class="mb-20">
+      <section id="subbab6" class="pt-16 mb-4">
         <div>
-          <h2 class="font-quicksand font-bold mb-3 text-dark text-2xl">
-            Tips Praktis untuk Konsistensi
+          <h2
+            class="font-quicksand font-bold mb-3 text-dark text-2xl dark:text-white"
+          >
+            Contoh Studi Kasus Singkat
           </h2>
-          <p class="mb-2 text-slate-500 text-sm md:text-base">
+          <p class="mb-2 text-slate-500 text-sm md:text-base dark:text-light">
             Mari kita lihat contoh nyata penerapan anggaran pada seorang anak
             muda.
           </p>
           <div>
-            <p class="mb-4 text-slate-500 text-sm md:text-base">
+            <p class="mb-4 text-slate-500 text-sm md:text-base dark:text-light">
               Rani, 23 tahun, seorang karyawan baru dengan gaji Rp4.000.000 per
               bulan. Awalnya, Rani sering merasa uangnya “habis begitu saja”
               setiap akhir bulan, padahal tidak pernah ada pembelian besar. Ia
@@ -798,11 +897,13 @@
             </p>
             <div class="mb-4">
               <h4
-                class="mb-1 text-secondary font-semibold text-sm md:text-base"
+                class="mb-1 text-secondary font-semibold text-sm md:text-base dark:text-light"
               >
                 Penerapan Anggaran
               </h4>
-              <ul class="ml-5 list-disc text-sm text-slate-500 md:text-base">
+              <ul
+                class="ml-5 list-disc text-sm text-slate-500 md:text-base dark:text-light"
+              >
                 <li class="mb-1">
                   50% kebutuhan (Rp2.000.000): kos, makan sehari-hari,
                   transportasi, tagihan listrik & internet.
@@ -817,8 +918,10 @@
                 </li>
               </ul>
             </div>
-            <div class="mb-4 text-slate-500 text-sm md:text-base">
-              <h4 class="font-semibold text-secondary mb-1.5">
+            <div
+              class="mb-4 text-slate-500 text-sm md:text-base dark:text-light"
+            >
+              <h4 class="font-semibold text-secondary mb-1.5 dark:text-white">
                 Perjalanan 6 Bulan Pertama
               </h4>
               <p class="mb-2">
@@ -829,7 +932,9 @@
                 untuk mencatat setiap transaksi.
               </p>
               <p class="mb-1">Hasilnya setelah 6 bulan:</p>
-              <ul class="ml-5 list-disc text-sm text-slate-500 md:text-base">
+              <ul
+                class="ml-5 list-disc text-sm text-slate-500 md:text-base dark:text-light"
+              >
                 <li class="mb-1">Dana darurat terkumpul Rp4.800.000.</li>
                 <li class="mb-1">Belanja impulsif berkurang 40%.</li>
                 <li>
@@ -838,11 +943,15 @@
                 </li>
               </ul>
             </div>
-            <div class="mb-4 text-slate-500 text-sm md:text-base">
-              <h4 class="font-semibold text-secondary mb-1.5">
+            <div
+              class="mb-4 text-slate-500 text-sm md:text-base dark:text-light"
+            >
+              <h4 class="font-semibold text-secondary mb-1.5 dark:text-white">
                 Pelajaran yang Bisa Dipetik
               </h4>
-              <ul class="ml-5 list-disc text-sm text-slate-500 md:text-base">
+              <ul
+                class="ml-5 list-disc text-sm text-slate-500 md:text-base dark:text-light"
+              >
                 <li class="mb-1">
                   Disiplin kecil berdampak besar: menabung rutin meski jumlahnya
                   kecil lebih baik daripada menunggu sisa.
@@ -860,7 +969,7 @@
           </div>
         </div>
       </section>
-      <section id="quiz" class="mb-20">
+      <section id="quiz" class="pt-16 mb-4">
         <div class="">
           <div class="flex w-full justify-center">
             <img
@@ -869,7 +978,7 @@
               class="w-full h-full sm:w-xl"
             />
           </div>
-          <p class="mb-4 text-slate-500 text-sm md:text-base">
+          <p class="mb-4 text-slate-500 text-sm md:text-base dark:text-light">
             <i class="fa-solid fa-hand-point-right mr-1 text-primary"></i>
             Sekarang kamu sudah tahu dasar-dasar mengatur anggaran pribadi,
             saatnya menguji pemahamanmu! Yuk, coba quiz singkat di bawah ini
@@ -877,10 +986,10 @@
             bijak.
           </p>
           <button
-            class="bg-white border border-primary rounded-xl overflow-hidden group hover:border-amber-500 active:border-amber-500 transition duration-300"
+            class="bg-white border border-primary rounded-xl overflow-hidden group hover:border-amber-500 active:border-amber-500 transition duration-300 dark:bg-dark"
           >
             <a
-              href="#"
+              href="comingSoon.html"
               class="block px-6 py-2 text-primary font-semibold group-hover:text-amber-500 active:text-amber-500 transition duration-300"
               >Mulai Quiz
               <i
@@ -891,8 +1000,112 @@
         </div>
       </section>
     </div>
-
-    <div class="mt-32"></div>
+    <!-- Footer -->
+    <footer class="">
+      <div class="w-full overflow-hidden leading-0">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+          class="h-4 w-full"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="fill-dark"
+          ></path>
+        </svg>
+      </div>
+      <div class="bg-dark">
+        <div class="container mx-auto px-6">
+          <div class="flex flex-wrap justify-between gap-6 pt-6">
+            <div class="w-full lg:w-md">
+              <div>
+                <a href="index.html" class="w-fit flex items-end mb-2">
+                  <img
+                    src="images/logo.png"
+                    alt="logo"
+                    class="w-6 h-6 md:w-8 md:h-8"
+                  />
+                  <h
+                    class="font-semibold tracking-wide text-white md:text-lg lg:text-xl"
+                    >oin<span class="text-primary">Lita</span></h
+                  >
+                </a>
+              </div>
+              <p class="text-xs text-slate-300 md:text-sm">
+                Platform belajar finansial yang menyediakan materi, alat, dan
+                tips praktis untuk semua orang.
+              </p>
+            </div>
+            <div class="">
+              <h4 class="mb-1.5 text-slate-300 font-bold">Quick Link</h4>
+              <ul class="text-sm text-slate-300 flex flex-col gap-0.5 md:gap-1">
+                <li class="hover:text-slate-100 transition">
+                  <a href="index.html">Beranda</a>
+                </li>
+                <li class="hover:text-slate-100 transition">
+                  <a href="comingSoon.html">Tentang Kami</a>
+                </li>
+                <li class="hover:text-slate-100 transition">
+                  <a href="comingSoon.html">Kontak</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="mb-1.5 text-slate-300 font-bold">Materi</h4>
+              <ul class="text-sm text-slate-300 flex flex-col gap-0.5 md:gap-1">
+                <li class="hover:text-slate-100 transition">
+                  <a href="#">Mengatur Anggaran</a>
+                </li>
+                <li class="hover:text-slate-100 transition">
+                  <a href="comingSoon.html">Dasar-dasar Investasi</a>
+                </li>
+                <li class="hover:text-slate-100 transition">
+                  <a href="comingSoon.html">Strategi Menabung Efektif</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="mb-1.5 text-slate-300 font-bold">Media Sosial</h4>
+              <ul class="text-sm text-slate-300 flex flex-col gap-0.5 md:gap-1">
+                <li class="hover:text-slate-100 transition">
+                  <a href="https://www.instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram mr-1"></i>
+                    Instagram
+                  </a>
+                </li>
+                <li class="hover:text-slate-100 transition">
+                  <a href="https://www.facebook.com" target="_blank">
+                    <i class="fa-brands fa-facebook mr-1"></i>
+                    Facebook
+                  </a>
+                </li>
+                <li class="hover:text-slate-100 transition">
+                  <a href="https://twitter.com" target="_blank">
+                    <i class="fa-brands fa-x-twitter mr-1"></i>
+                    Twitter
+                  </a>
+                </li>
+                <li class="hover:text-slate-100 transition">
+                  <a href="https://www.youtube.com" target="_blank">
+                    <i class="fa-brands fa-youtube mr-1"></i>
+                    Youtube
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-5">
+            <hr class="text-slate-300" />
+            <p class="text-sm text-slate-300 py-3">
+              Copyright: &copy; 2025 CoinLita. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Close Footer -->
     <!-- ScriptJsMateri -->
     <script src="js/scriptMateri.js"></script>
   </body>
