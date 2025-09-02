@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "shx": "^0.4.0"
+  },
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./src/css/input.css -o ./public/css/style.css --watch",
+    "copy:html": "shx cp src/*.html public/",
+    "copy:images": "shx mkdir -p public/images && shx cp -r src/images/* public/images",
+    "copy:js": "shx mkdir -p public/js && shx cp src/js/*.js public/js",
+    "build:css": "npx tailwindcss -i ./src/css/input.css -o ./public/css/style.css --minify",
+    "build": "npm run copy:html && npm run copy:images && npm run copy:js && npm run build:css"
+  }
+}
