@@ -1,4 +1,8 @@
-PROJECT LOMBA
+#PROJECT LOMBA
+
+## 🚀 Live Preview
+[View Live Preview](https://mwidiarta.github.io/projectWebLombaIntech)
+
 
 Struktur Folder:
 - src : Berisi file sumber HTML, gambar, input.css, dan JavaScript
@@ -7,7 +11,6 @@ Struktur Folder:
 
 CARA MELIHAT PROJECT WEB:
 1. Buka file public/index.html di browser
-   (JANGAN membuka src/index.html karena file ini belum terhubung ke CSS hasil build)
 
 Cara Build Ulang Project (Opsional):
 1. Pastikan Node.js sudah terinstall di komputer (disarankan versi 18 atau lebih)
