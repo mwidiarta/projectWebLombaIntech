@@ -1,4 +1,4 @@
-# PROJECT LOMBA
+## PROJECT LOMBA
 
 ## 🚀 Live Preview
 [View Live Preview](https://mwidiarta.github.io/projectWebLombaIntech)
